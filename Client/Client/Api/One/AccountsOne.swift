@@ -25,6 +25,10 @@ extension One {
             self.apiHandler = apiHandler
         }
         
+        public func testGet(address: String, _ apiGetHandler: @escaping ApiGetHandlerTest<AccountsOne> = handleApiGetTest, completionHandler: @escaping (AccountsOne?, ArkError?, String) -> Void) {
+            apiGetHandler(endpoint, ["address": address], "account", completionHandler)
+        }
+        
         /// Retrieves the given address
         public func get(address: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
             apiHandler(endpoint, ["address": address], completionHandler)

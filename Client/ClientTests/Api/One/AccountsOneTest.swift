@@ -33,6 +33,18 @@ class AccountsOneTest: XCTestCase {
         accounts = One.Accounts(client: client, mockHandleApiGet)
     }
     
+    func testTempTestGet() {
+        let c = ArkClient(host: "https://explorer.ark.io:8443/api", version: 1)
+        let acc = One.Accounts(client: c)
+        acc.testGet(address: "AMw3TiLrmVmwmFVwRzn96kkUsUpFTqsAEX") { (account, error, url) in
+            print("---------response printing----------")
+            print(account)
+            print(error)
+            print(url)
+        }
+        sleep(4) // temporary to get around async call issue without using Expectations
+    }
+    
     func testAccountsGet() {
         accounts?.get(address: "dummyAddress", completionHandler: { (response) in
             let parameters = response!["parameters"] as! [String: Any]?

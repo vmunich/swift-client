@@ -24,6 +24,7 @@
 		D03F5E1320FAB9BF00ED8884 /* VotesTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1220FAB9BF00ED8884 /* VotesTwo.swift */; };
 		D03F5E1520FABF3E00ED8884 /* WalletsTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1420FABF3E00ED8884 /* WalletsTwo.swift */; };
 		D03F5E1920FAC1D900ED8884 /* TransactionsTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1820FAC1D900ED8884 /* TransactionsTwo.swift */; };
+		D03F5E1E20FB67FC00ED8884 /* AccountsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1D20FB67FC00ED8884 /* AccountsModel.swift */; };
 		D0DE446E20F52ADF00079494 /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE446420F52ADF00079494 /* Client.framework */; };
 		D0DE447320F52ADF00079494 /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE447220F52ADF00079494 /* ClientTests.swift */; };
 		D0DE447520F52ADF00079494 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DE446720F52ADF00079494 /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,6 +77,7 @@
 		D03F5E1220FAB9BF00ED8884 /* VotesTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotesTwo.swift; sourceTree = "<group>"; };
 		D03F5E1420FABF3E00ED8884 /* WalletsTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsTwo.swift; sourceTree = "<group>"; };
 		D03F5E1820FAC1D900ED8884 /* TransactionsTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTwo.swift; sourceTree = "<group>"; };
+		D03F5E1D20FB67FC00ED8884 /* AccountsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsModel.swift; sourceTree = "<group>"; };
 		D0DE446420F52ADF00079494 /* Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DE446720F52ADF00079494 /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
 		D0DE446820F52ADF00079494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,6 +127,30 @@
 			path = One;
 			sourceTree = "<group>";
 		};
+		D03F5E1A20FB67CC00ED8884 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D03F5E1C20FB67DB00ED8884 /* Two */,
+				D03F5E1B20FB67D700ED8884 /* One */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D03F5E1B20FB67D700ED8884 /* One */ = {
+			isa = PBXGroup;
+			children = (
+				D03F5E1D20FB67FC00ED8884 /* AccountsModel.swift */,
+			);
+			path = One;
+			sourceTree = "<group>";
+		};
+		D03F5E1C20FB67DB00ED8884 /* Two */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Two;
+			sourceTree = "<group>";
+		};
 		D0DE445A20F52ADF00079494 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +173,7 @@
 		D0DE446620F52ADF00079494 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				D03F5E1A20FB67CC00ED8884 /* Model */,
 				D0DE447E20F52B5F00079494 /* Api */,
 				D0DE446720F52ADF00079494 /* Client.h */,
 				D0DE446820F52ADF00079494 /* Info.plist */,
@@ -335,6 +362,7 @@
 				D03F5DF620F92DE000ED8884 /* LoaderOne.swift in Sources */,
 				D0DE448920F53B2100079494 /* AccountsOne.swift in Sources */,
 				D03F5DFA20F9311800ED8884 /* SignaturesOne.swift in Sources */,
+				D03F5E1E20FB67FC00ED8884 /* AccountsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
